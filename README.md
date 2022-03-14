@@ -26,7 +26,7 @@ Make sure to make an account before you hit the authentication endpoint.
 <details><summary>Hint</summary>
 `curl -X GET "http://localhost:3000/newUser?username=josh&password=password"`
 `loadtest -k -c 20 -n 250 "http://localhost:3000/auth?username=josh&password=password"`
-<details>
+</details>
 
 You'll see the percentage of requests that were served within a certain time, the longest request is quite long!
 Try varying the amount of concurrency or requests and see how that changes the response time.
