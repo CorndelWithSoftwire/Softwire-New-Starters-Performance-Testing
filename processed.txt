@@ -1,0 +1,39 @@
+Statistical profiling result from isolate-00000225A04E8040-31884-v8.log, (11444 ticks, 0 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  10417   91.0%          C:\WINDOWS\SYSTEM32\ntdll.dll
+   1026    9.0%          C:\Program Files\nodejs\node.exe
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      1    0.0%  100.0%  LazyCompile: *fastparse C:\Work\Academy\performance-testing\node_modules\parseurl\index.js:95:20
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+      1    0.0%  100.0%  JavaScript
+      0    0.0%    0.0%  C++
+      3    0.0%  300.0%  GC
+  11443  100.0%          Shared libraries
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  10417   91.0%  C:\WINDOWS\SYSTEM32\ntdll.dll
+
+   1026    9.0%  C:\Program Files\nodejs\node.exe
+   1003   97.8%    C:\Program Files\nodejs\node.exe
+    979   97.6%      LazyCompile: ~pbkdf2Sync internal/crypto/pbkdf2.js:45:20
+    976   99.7%        LazyCompile: ~<anonymous> file:///C:/Work/Academy/performance-testing/index.js:32:18
+    976  100.0%          LazyCompile: ~handle C:\Work\Academy\performance-testing\node_modules\express\lib\router\layer.js:86:49
+    976  100.0%            LazyCompile: ~next C:\Work\Academy\performance-testing\node_modules\express\lib\router\route.js:114:16
+
