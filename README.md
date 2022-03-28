@@ -1,6 +1,6 @@
 # Introduction
 
-For this exercise we're going to profile the performance of a fictional (and awful!) authentication app.
+For this exercise we're going to profile the performance of a fictional (and awful!) authentication app, and check other NFRs
 
 # Install node modules
 
@@ -60,3 +60,7 @@ The `pbkdf2Sync` function is done synchronously so it will block the thread runn
 <details><summary>Hint</summary>
 You'll want to use `pbkdf2` function over `pbkdf2Sync`
 </details>
+
+# Security
+
+Run npm audit to see any security concerns with packages you have installed. Take any steps necessary to fix these security concerns!
