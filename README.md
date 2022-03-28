@@ -15,7 +15,7 @@ It's a simple express app, try and test both of the endpoints either in the brow
 # Load testing
 
 Install the [loadtest](https://github.com/alexfernandez/loadtest) package globally with 
-`npm install loadtest`
+`npm install loadtest -g`
 
 Close the app and restart it, this time with `NODE_ENV=production node --prof index.js`.
 
